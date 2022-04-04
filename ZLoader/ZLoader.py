@@ -33,7 +33,7 @@ yourVideo = YouTube(url)
 if input(f"\u001b[33m[{datetime.now().strftime('%H:%M:%S')} INFO] » Do you want to download {yourVideo.title}? [Y/n] \u001b[0m") == "Y":
     print(f"\u001b[33m[{datetime.now().strftime('%H:%M:%S')} INFO] » Downloading... \u001b[0m\n")
     yourVideo = yourVideo.streams.get_highest_resolution()
-    yourVideo.download("descargas")
+    yourVideo.download("downloads")
     print(f"\u001b[33m[{datetime.now().strftime('%H:%M:%S')} INFO] » Download complete! \u001b[0m\n")
 else:
     print(f"\u001b[33m[{datetime.now().strftime('%H:%M:%S')} INFO] » Download canceled! \u001b[0m\n")
